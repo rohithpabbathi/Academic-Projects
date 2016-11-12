@@ -1,0 +1,41 @@
+<html>
+<head>
+<title> TMS </title>
+<h1 align="center"> Happy travels </h1>
+<a href="a.html"> HOME </a>
+<a href="f.html">Check fare </a>
+<style>
+body  {
+      background-image: url("road.jpg");
+      background-color: none;
+      background-repeat: no-repeat;
+      background-size:100% 100%;
+}
+</style>
+</head>
+<body>
+<p>
+Enter KMS
+<input type="text" id="l1"><br>
+Select vehicle:
+<select onchange="h()" id="l2">
+<option value="1">indica</option>
+<option value="2">innova</option>
+<option value="3">Bus</option>
+</select><br>
+Amount:RS.
+<input type="text" id="l3">
+<script>
+function h()
+{
+if(document.getElementById("l2").value==1)
+document.getElementById("l3").value=parseInt(document.getElementById("l1").value)*9
+else if(document.getElementById("l2").value==2)
+document.getElementById("l3").value=parseInt(document.getElementById("l1").value)*15
+else
+document.getElementById("l3").value=parseInt(document.getElementById("l1").value)*18
+}
+</script>
+</p>
+</body>
+</html>
